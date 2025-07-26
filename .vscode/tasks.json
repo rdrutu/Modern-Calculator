@@ -1,0 +1,23 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run Calculator",
+			"type": "shell",
+			"command": "java",
+			"args": [
+				"--module-path",
+				"lib",
+				"--add-modules",
+				"javafx.controls,javafx.fxml",
+				"-cp",
+				"src",
+				"-Dfile.encoding=UTF-8",
+				"CalculatorApp"
+			],
+			"group": "build",
+			"isBackground": false,
+			"problemMatcher": []
+		}
+	]
+}
